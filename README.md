@@ -16,20 +16,20 @@ The following are discussed in this file:
 
 1. BNF Grammar
 
-<next>          ::= <line> | <next><line>
-<line>          ::= <NEWLINE> | <END_OF_FILE> | assignment NEWLINE | expr NEWLINE | invassignment 
-<assignment>    ::= <id><equals><expr><semicolon>
-<invassignment> ::= <id><equals><expr><NEWLINE> 
-<expr>          ::= <id> | <expr><op><expr> | <oparen><expr><cparen>
+	<next>          ::= <line> | <next><line>
+	<line>          ::= <NEWLINE> | <END_OF_FILE> | assignment NEWLINE | expr NEWLINE | invassignment 
+	<assignment>    ::= <id><equals><expr><semicolon>
+	<invassignment> ::= <id><equals><expr><NEWLINE> 
+	<expr>          ::= <id> | <expr><op><expr> | <oparen><expr><cparen>
   
-<id>          ::= <char> | <id><char> | <id><digit>
-<op>          ::= '+' | '-' | '*' | '/' | '%'
-<equals>      ::= '='
-<oparen>      ::= '('
-<cparen>      ::= ')'
-<semicolon>   ::= ';'
-<NEWLINE>     ::= "\n"
-<END_OF_FILE> ::= <<EOF>>
+	<id>          ::= <char> | <id><char> | <id><digit>
+	<op>          ::= '+' | '-' | '*' | '/' | '%'
+	<equals>      ::= '='
+	<oparen>      ::= '('
+	<cparen>      ::= ')'
+	<semicolon>   ::= ';'
+	<NEWLINE>     ::= "\n"
+	<END_OF_FILE> ::= <<EOF>>
 
 
 <char>  ::=  a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|
