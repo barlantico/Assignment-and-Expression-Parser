@@ -1,11 +1,11 @@
 # Assignment-and-Expression-Parser
 
-=========================================
 Brian Arlantico, 821125494
-cssc3010
+
 CS530 Fall 2020
+
 Assignment #3, Parser 
-=========================================
+
 
 The following are discussed in this file:
 1. BNF Grammar
