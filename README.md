@@ -68,27 +68,28 @@ extra line at the bottom of statements.txt
 Since my program disregarded spaces, it is not able to differentiate between some tokens, one in 
 particular is seen in the example file that can be found in canvas:
 
- bad +- delta
- bad + - delta
+ 	bad +- delta
+ 	bad + - delta
 
 my program will just print the two sentences with spaces in between since my program recognizes 
 the '+' and '-' as two separate tokens so stdout will look like:
 
- bad + - delta
- bad + - delta
+ 	bad + - delta
+ 	bad + - delta
 
 and the error will be "unexpected '-'" for the first one instead of "unexpected '+-'", where
 '+-' is considered as one token.
 
 Another issue is when compiling (running make), I do get a warning:
 
-parser.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+	parser.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
 
 I did try various things to remove this conflict, however every time I attempted to resovle it 
 my grammar would no longer detect valid/invalid statements correctly. Ultimately I ended up leaving
 it the way it is as it does work as intended, but a warning does print out after every compile. 
 
 Lessons Learned: 
+
 After attempting to start this program solely in C, I decided to bite the bullet and just play
 around with flex/bison. It was difficult at first getting everything down but once I was able 
 to figure it out, it was much much easier than trying to create a parser in C. After that, I ran
